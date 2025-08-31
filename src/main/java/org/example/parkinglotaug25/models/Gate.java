@@ -1,4 +1,9 @@
 package org.example.parkinglotaug25.models;
 
-public abstract class Gate {
+import lombok.experimental.SuperBuilder;
+
+@SuperBuilder
+public abstract class Gate extends BaseModel{
+    private Integer gateNumber;
+    private GateOperator operator;
 }

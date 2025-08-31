@@ -1,7 +1,10 @@
 package org.example.parkinglotaug25.models;
 
+import lombok.experimental.SuperBuilder;
+
 import java.util.Date;
 
+@SuperBuilder
 public abstract class BaseModel {
     private Long id;
     private Date createdAt;

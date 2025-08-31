@@ -1,8 +1,14 @@
 package org.example.parkinglotaug25.models;
 
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
+@SuperBuilder
 public class ParkingLot extends BaseModel {
     private String name;
     private String address;
@@ -10,6 +16,4 @@ public class ParkingLot extends BaseModel {
     private Display display;
     private List<Gate> entryGate = new ArrayList<>();
     private List<Gate> exitGate =new ArrayList<>();
-
-
 }
